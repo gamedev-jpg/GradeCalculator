@@ -2,9 +2,11 @@
 questions_on_assignment = float(input("Number of questions on the assignment: "))
 questions_answered_correctly = float(input("Number of questions answered correctly: "))
 
+# Takes the input from the user and does necessary calculations
 grade_percent_in_decimal = questions_answered_correctly / questions_on_assignment
 grade_percent = grade_percent_in_decimal * 100
 
+# Prints what the user's grade is based on percentage
 if grade_percent >= 90:
     print("Your grade is an A")
 elif grade_percent >= 80 and grade_percent < 90:
